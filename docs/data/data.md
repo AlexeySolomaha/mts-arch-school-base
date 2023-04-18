@@ -8,89 +8,79 @@
 ```plantuml
 @startuml
 ' Логическая модель данных в варианте UML Class Diagram (альтернатива ER-диаграмме).
-namespace ShoppingCart {
+namespace TimeTable {
 
- class ShoppingCart
+ class TimeTable
  {
   id : string
-  createDate : datetime
-  updateDate : datetime
-  customer : Customer
-  price : ShoppingCartPrice
-  cartItems : CartItem[]
+  events : Conference[]
  }
 
- class ShoppingCartPrice
+ class Conference
  {
   type : CartItemPrice
- }
- class CartItemPrice
- {
-  type : CartItemPriceType
- }
-
- enum CartPriceType
- {
-  total
-  grandTotal
-  offeringDiscount
-  couponsDiscount
+  startDate: Date
+  conferenceManager: ConferenceManager
+  speakers : Speaker
+  offlineAttendants: OfflineAttendant[]
+  onlineAttendants: OnlineAttendant[]
  }
 
- class CartItem
+ class ConferenceManager
  {
-  id : string
-  quantity : int
-  offering : Offering
-  relationship : CartItemRelationShip[]
-  price : CartItemPrice[]
-  status : CartItemStatus
+  name : String
+  position : String 
  }
 
-  class Customer
+ class Speaker
  {
-  id : string
+  name : String
+  city : String
+  company : String
+  topic : String
+  approved : boolean  
+ }
+
+ class OfflineAttendant {
+  name : String
+  city : String
+  company : String
+  invitationId : String
+ }
+
+ class OnlineAttendant
+ {
+  name : String
+  city : String
+  company : String
+  invitationLink: String
  }
  
- class Offering
- {
-  id : string
-  isQuantifiable : boolean
-  actionType : OfferingActionType
-  validFor : ValidFor
- }
-  
- class ProductSpecificationRef
- {
-  id : string
- }
- 
- ShoppingCart *-- "1..*" ShoppingCartPrice
- ShoppingCartPrice -- CartPriceType
- ShoppingCart *-- "*" CartItem
- CartItem *-- "*" CartItemPrice
- CartItemPrice -- CartPriceType
- CartItem *-- "1" Offering
- Offering *-- "1" ProductSpecificationRef
- Offering *-- "0..1" ProductConfiguration
- ShoppingCart *-- "1" Customer
+ TimeTable *-- "1..*" Conference
+ Conference *-- "1..1" ConferenceManager
+ Conference *-- "1..*" Speaker
+ Conference *-- "0..*" OfflineAttendant
+ Conference *-- "0..*" OnlineAttendant
 }
 
-namespace Ordering {
- ProductOrder *-- OrderItem
- OrderItem *-- Product
- Product *-- ProductSpecificationRef
- ProductOrder *-- Party
+namespace RunningConference {
+  class DaySchedule {
+    speeches : Speech[]
+    specialGuests: OfflineAttendant[]
+    conferenceManager: ConferenceManager 
+  }
+
+  class Speech {
+    speaker: Speaker
+    topic: String
+    startAt: Time
+  }
+
+  DaySchedule *-- "1..**" Speech
+  DaySchedule *-- "1..**" OfflineAttendant
+  DaySchedule *-- "1..1" ConferenceManager
+  Speech *-- "1..1" Speaker
 }
 
-namespace ProductCatalog {
- ShoppingCart.ProductSpecificationRef ..> ProductSpecification : ref
- Ordering.ProductSpecificationRef ..> ProductSpecification : ref
-}
-
-namespace CX {
- ShoppingCart.Customer ..> Customer : ref
- Ordering.Party ..> Customer : ref
-}
 @enduml
 ```

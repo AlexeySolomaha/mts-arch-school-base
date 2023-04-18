@@ -8,14 +8,18 @@
 
 LAYOUT_WITH_LEGEND()
 
-Person(pbc, "Personal Banking Customer", "A customer of the bank, with personal bank accounts.")
-System(ibs, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
-System_Ext(es, "E-mail system", "The internal Microsoft Exchange e-mail system.")
-System_Ext(mbs, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+Person(att, "Участник конференции", "пользователь, который зарегистрировался в системе.")
+Person(speaker, "Докладчик", "пользователь, который подал заявку на участие")
+Person(confManager, "Организатор конференции", "сотрудник ПАО МТС, ответственный за организацию и проведение мероприятий")
+System(helloconf, "Платформа helloconf.mts.ru", "позволяет организовывать и проводить IT-конференции")
+System_Ext(timepad, "Timepad сервис", "сервис для регистрации для участия в запланированных событиях")
 
-Rel(pbc, ibs, "Uses")
-Rel(es, pbc, "Sends e-mails to")
-Rel(ibs, es, "Sends e-mails", "SMTP")
-Rel(ibs, mbs, "Uses")
+Rel(att, helloconf, "принимает участие в мероприятиях")
+Rel(att, timepad, "регистрируется для участия")
+Rel(timepad, att, "присылает приглашение на мероприятие")
+Rel(speaker, helloconf, "направляет заявку с докладом")
+Rel(speaker, helloconf, "выступает с докладом на конференции")
+Rel(confManager, timepad, "получает список зарегистрировавшихся участников")
+Rel(confManager, helloconf, "публикует матералы конференций, анонсы мероприятий")
 @enduml
 ```
