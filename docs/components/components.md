@@ -1,8 +1,5 @@
 # Компонентная архитектура
-<!-- Состав и взаимосвязи компонентов системы между собой и внешними системами с указанием протоколов, ключевые технологии, используемые для реализации компонентов.
-Диаграмма контейнеров C4 и текстовое описание. 
-Подробнее: https://confluence.mts.ru/pages/viewpage.action?pageId=375783368
--->
+
 ## Контейнерная диаграмма
 
 ```plantuml
@@ -12,45 +9,41 @@
 AddElementTag("microService", $shape=EightSidedShape(), $bgColor="CornflowerBlue", $fontColor="white", $legendText="microservice")
 AddElementTag("storage", $shape=RoundedBoxShape(), $bgColor="lightSkyBlue", $fontColor="white")
 
-Person(customer, "Покупатель", "B2C клиент")
+Person(att, "Участник конференции", "пользователь, который зарегистрировался в системе.")
+Person(speaker, "Докладчик", "пользователь, который подал заявку на участие")
+Person(manager, "Организатор конференции", "сотрудник ПАО МТС, ответственный за организацию и проведение мероприятий")
 
-System_Boundary(c, "MTS Shop Lite") {
-   Container(app, "Клиентское веб-приложение", "html, JavaScript, Angular", "Портал интернет-магазина")
-   Container(offering_service, "Product Offering Service", "Java, Spring Boot", "Сервис управления продуктовым предложением", $tags = "microService")      
-   ContainerDb(offering_db, "Product Catalog", "PostgreSQL", "Хранение продуктовых предложений", $tags = "storage")
-   
-   Container(ordering_service, "Product Ordering Service", "Golang, nginx", "Сервис управления заказом", $tags = "microService")      
-   ContainerDb(ordering_db, "Order Inventory", "MySQL", "Хранение заказов", $tags = "storage")
-    
-   Container(message_bus, "Message Bus", "RabbitMQ", "Транспорт для бизнес-событий")
-   Container(audit_service, "Audit Service", "C#/.NET", "Сервис аудита", $tags = "microService")      
-   Container(audit_store, "Audit Store", "Event Store", "Хранение произошедших события для аудита", $tags = "storage")
+System_Boundary(helloconf, "Платформа helloconf.mts.ru") {
+    Container(user_app, "Веб-приложение для пользователей", "html, JavaScript", "Портал helloconf.mts.ru")
+    Container(bo_app, "Веб-приложение для сотрудников", "html, JavaScript", "Back-office платформы helloconf.mts.ru")
+    Container(user_app_be, "BE для пользовательского приложения")
+    Container(bo_app_be, "BE для сотрудников приложения")
+    ContainerDb(storage_db, "Event Data", "PostgreSQL", "Хранение данных мероприятий", $tags = "storage")
 }
 
-System_Ext(logistics_system, "msLogistix", "Система управления доставкой товаров.")  
+System_Ext(timepad, "Timepad сервис", "сервис для регистрации для участия в запланированных событиях")
 
-Lay_R(offering_service, ordering_service)
-Lay_R(offering_service, logistics_system)
-Lay_D(offering_service, audit_service)
+'Lay_R(helloconf, timepad)
+'Lay_R(speaker, manager)
+'Lay_R(bo_app, storage_db)
 
-Rel(customer, app, "Оформление заказа", "HTTPS")
-Rel(app, offering_service, "Выбор продуктов для корзины(Продукт):корзина", "JSON, HTTPS")
+BiRel(att, user_app, "Заявка на участие как зритель", "REST HTPPS")
+Rel_R(speaker, bo_app_be, "Направляет заявку с докладом", "SMTP")
+Rel_L(bo_app_be, speaker, "Получает результат рецензирования доклада", "SMTP")
+BiRel(manager, bo_app, "Публикует матералы, составляет расписание конференций", "REST HTPPS")
+BiRel(manager, bo_app, "Рецензирует доклады", "REST HTPPS")
+Rel(manager, timepad, "Получает список зарегистрировавшихся участников")
 
-Rel(offering_service, message_bus, "Отправка заказа(Корзина)", "AMPQ")
-Rel(offering_service, offering_db, "Сохранение продуктового предложения(Продуктовая спецификация)", "JDBC, SQL")
+BiRel_D(user_app, user_app_be, "Получение материалов конференций", "REST HTPPS")
+BiRel_D(bo_app, bo_app_be, "Работа с данными о докладчиках и расписании конференции", "REST HTPPS")
 
-Rel(ordering_service, message_bus, "Получение заказа: Корзина", "AMPQ")
-Rel_U(audit_service, message_bus, "Получение события аудита(Событие)", "AMPQ")
+BiRel(user_app_be, storage_db, "Сохранение и чтение данных", "JDBC,SQL")
+BiRel_D(bo_app_be, storage_db, "Сохранение и чтение данных", "JDBC,SQL")
 
-Rel(ordering_service, ordering_db, "Сохранение заказа(Заказ)", "SQL")
-Rel(audit_service, audit_store, "Сохранение события(Событие)")
-Rel(ordering_service, logistics_system, "Доставка(Наряд на доставку):Трекинг", "JSON, HTTP")  
+Rel_U(timepad, att, "присылает приглашение на мероприятие", "SMTP")
+Rel_R(att, timepad, "регистрируется для участия", "HTPPS")
+'Rel(manager, timepad, "получает список зарегистрировавшихся участников")
 
 SHOW_LEGEND()
 @enduml
 ```
-
-## Список компонентов
-| Компонент             | Роль/назначение                  |
-|:----------------------|:---------------------------------|
-| *Название компонента* | *Описание назначения компонента* |
