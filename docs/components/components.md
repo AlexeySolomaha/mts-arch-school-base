@@ -17,7 +17,7 @@ System_Boundary(helloconf, "Платформа helloconf.mts.ru") {
     Container(user_app, "Веб-приложение для пользователей", "html, JavaScript", "Портал helloconf.mts.ru")
     Container(bo_app, "Веб-приложение для сотрудников", "html, JavaScript", "Back-office платформы helloconf.mts.ru")
     Container(user_app_be, "BE для пользовательского приложения")
-    Container(bo_app_be, "BE для сотрудников приложения")
+    Container(bo_app_be, "BE приложения для сотрудников")
     ContainerDb(storage_db, "Event Data", "PostgreSQL", "Хранение данных мероприятий", $tags = "storage")
 }
 
