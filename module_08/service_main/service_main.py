@@ -5,6 +5,7 @@ import logging
 import threading
 import gc
 import time
+import sys
 
 requests.adapters.DEFAULT_RETRIES = 1
 circuit_monitor_report_interval_seconds = 1
@@ -12,6 +13,7 @@ circuit_monitor_report_interval_seconds = 1
 # service_presentation = "localhost:8082"
 service_author = "service_author:8081"
 service_presentation = "service_presentation:8082"
+sys.tracebacklimit=0
 
 
 class Author(object):
@@ -67,7 +69,8 @@ def get_presentation(title):
     return presentation
 
 
-@circuit(failure_threshold=5, recovery_timeout=10, expected_exception=HTTPException,
+@circuit(failure_threshold=5, recovery_timeout=10, 
+         expected_exception=HTTPException,
          fallback_function=author_circuit_exception)
 def get_author(id):
     try:

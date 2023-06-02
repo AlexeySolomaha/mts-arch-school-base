@@ -1,0 +1,492 @@
+asiq@home:~/Projects/ArchSchool/mts-arch-school-base/module_08$ docker compose up > circuit_breaker.log | tail
+[+] Running 3/0
+ ✔ Container service_presentation  Created0.0s 
+ ✔ Container service_author        Created0.0s 
+ ✔ Container service_main          Created0.0s 
+service_presentation  | INFO:     Will watch for changes in these directories: ['/']
+service_presentation  | INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+service_presentation  | INFO:     Started reloader process [1] using WatchFiles
+service_author        | INFO:     Will watch for changes in these directories: ['/']
+service_author        | INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+service_author        | INFO:     Started reloader process [1] using WatchFiles
+service_presentation  | INFO:     Started server process [8]
+service_presentation  | INFO:     Waiting for application startup.
+service_presentation  | INFO:     Application startup complete.
+service_author        | INFO:     Started server process [8]
+service_author        | INFO:     Waiting for application startup.
+service_author        | INFO:     Application startup complete.
+service_main          | INFO:     Will watch for changes in these directories: ['/']
+service_main          | INFO:     Uvicorn running on http://0.0.0.0:8083 (Press CTRL+C to quit)
+service_main          | INFO:     Started reloader process [1] using WatchFiles
+service_main          | INFO:     Started server process [8]
+service_main          | INFO:     Waiting for application startup.
+service_main          | INFO:     Application startup complete.
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd16bf0>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd16bf0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd16bf0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd16bf0>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd581c0>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd581c0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd581c0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd581c0>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd16bc0>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd16bc0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd16bc0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd16bc0>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd59120>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd59120>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd59120>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd59120>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd5a110>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd5a110>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd5a110>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd5a110>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_author        | INFO:     Will watch for changes in these directories: ['/']
+service_author        | INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+service_author        | INFO:     Started reloader process [1] using WatchFiles
+service_author        | INFO:     Started server process [8]
+service_author        | INFO:     Waiting for application startup.
+service_author        | INFO:     Application startup complete.
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd58ca0>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd58ca0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd58ca0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd58ca0>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd5b430>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd5b430>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd5b430>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd5b430>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 2
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd592a0>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd592a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd592a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd592a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 3
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd7c160>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd7c160>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd7c160>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd7c160>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0b7dd7d240>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd7d240>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd7d240>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0b7dd7d240>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+^CGracefully stopping... (press Ctrl+C again to force)
+Aborting on container exit...
+[+] Running 3/3
+ ✔ Container service_main          Stopped10.5s 
+ ✔ Container service_author        Stopped0.0s 
+ ✔ Container service_presentation  Stopped10.3s
+
