@@ -1,0 +1,714 @@
+service_presentation  | INFO:     Will watch for changes in these directories: ['/']
+service_presentation  | INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+service_presentation  | INFO:     Started reloader process [1] using WatchFiles
+service_presentation  | INFO:     Started server process [8]
+service_presentation  | INFO:     Waiting for application startup.
+service_presentation  | INFO:     Application startup complete.
+service_author        | INFO:     Will watch for changes in these directories: ['/']
+service_author        | INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+service_author        | INFO:     Started reloader process [1] using WatchFiles
+service_author        | INFO:     Started server process [8]
+service_author        | INFO:     Waiting for application startup.
+service_author        | INFO:     Application startup complete.
+service_main          | INFO:     Will watch for changes in these directories: ['/']
+service_main          | INFO:     Uvicorn running on http://0.0.0.0:8083 (Press CTRL+C to quit)
+service_main          | INFO:     Started reloader process [1] using WatchFiles
+service_main          | INFO:     Started server process [8]
+service_main          | INFO:     Waiting for application startup.
+service_main          | INFO:     Application startup complete.
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_presentation  | <class 'list'>
+service_presentation  | INFO:     172.19.0.4:37682 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_author        | <class 'list'>
+service_author        | INFO:     172.19.0.4:53972 - "GET /authors/1 HTTP/1.1" 200 OK
+service_main          | Moore
+service_main          | INFO:     172.19.0.1:49402 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:50484 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_author        | INFO:     172.19.0.4:46272 - "GET /authors/1 HTTP/1.1" 200 OK
+service_main          | Moore
+service_main          | INFO:     172.19.0.1:46534 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:53648 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_author        | INFO:     172.19.0.4:40244 - "GET /authors/1 HTTP/1.1" 200 OK
+service_main          | Moore
+service_main          | INFO:     172.19.0.1:44860 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_author exited with code 0
+service_author exited with code 137
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:53656 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff3040fed70>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff3040fed70>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff3040fed70>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff3040fed70>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | INFO:     172.19.0.1:44864 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:53662 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 1
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff303740430>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303740430>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303740430>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303740430>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | INFO:     172.19.0.1:44878 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:53676 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff3040ff6a0>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff3040ff6a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff3040ff6a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff3040ff6a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | INFO:     172.19.0.1:44884 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_presentation  | INFO:     172.19.0.4:53680 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff303741210>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303741210>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303741210>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303741210>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | INFO:     172.19.0.1:44888 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 4
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:53686 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff303742200>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303742200>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303742200>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303742200>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | INFO:     172.19.0.1:44898 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 5
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:51240 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_main          | --- Logging error ---
+service_main          | socket.gaierror: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff303741480>: Failed to establish a new connection: [Errno -2] Name or service not known
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303741480>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | requests.exceptions.ConnectionError: HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303741480>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+service_main          | 
+service_main          | During handling of the above exception, another exception occurred:
+service_main          | 
+service_main          | TypeError: not all arguments converted during string formatting
+service_main          | Call stack:
+service_main          | Message: '>>> Error Connecting:'
+service_main          | Arguments: (ConnectionError(MaxRetryError("HTTPConnectionPool(host='service_author', port=8081): Max retries exceeded with url: /authors/1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff303741480>: Failed to establish a new connection: [Errno -2] Name or service not known'))")),)
+service_main          | INFO:     172.19.0.1:53330 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 500 Internal Server Error
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_author        | INFO:     Will watch for changes in these directories: ['/']
+service_author        | INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+service_author        | INFO:     Started reloader process [1] using WatchFiles
+service_author        | INFO:     Started server process [8]
+service_author        | INFO:     Waiting for application startup.
+service_author        | INFO:     Application startup complete.
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "half_open", failures: 6
+service_main          | WARNING:root:
+service_presentation  | INFO:     172.19.0.4:60318 - "GET /presentations/First%20Presentation HTTP/1.1" 200 OK
+service_author        | <class 'list'>
+service_author        | INFO:     172.19.0.4:35870 - "GET /authors/1 HTTP/1.1" 200 OK
+service_main          | Moore
+service_main          | INFO:     172.19.0.1:36458 - "GET /presentationsAndAuthor/First%20Presentation HTTP/1.1" 200 OK
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main          | WARNING:root:Circuit "get_author" is "closed", failures: 0
+service_main          | WARNING:root:
+service_main exited with code 0
+service_main exited with code 137
+service_presentation exited with code 0
+service_presentation exited with code 137
+service_author exited with code 0

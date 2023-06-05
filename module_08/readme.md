@@ -35,7 +35,7 @@ cd arch-school/basic/module_08/service_main;         uvicorn service_main:app   
 
 
 ### Сборка и запуск сервисов с docker-compose
-docker-compose build && docker-compose up -d
+docker compose build && docker compose up -d
 
 
 ## Работа с сервисами
@@ -92,3 +92,56 @@ curl http://127.0.0.1:8083/presentationsAndAuthor/First%20Presentation
 3. Используйте развитые фреймворки, платформы, управляемые сервисы, изучайте паттерны.
 4. Выбирая технологии, опирайтесь на ТехРадар(ы). Непроверенные технологии несут риски, но есть огромная масса технологий/продуктов которые для вас тестируются всем миром.
 5. Интеграционный сервис из задания можно запускать вообще без менеджмента сервисов/контейнеров, используя Serverless/FaaS.
+
+
+## Команды
+* Сборка
+  ```bash
+  $ docker compose build
+  ```
+* Запустить все сервисы (без вывода логов в консоль)
+  ```bash
+  $ docker compose up -d
+  ```
+* HTTP REST-запрос к интеграционному сервису
+  ```bash
+  $ curl http://127.0.0.1:8083/presentationsAndAuthor/First%20Presentation | jq
+  ```
+* Остановить service_author
+  ```bash
+  $ docker stop service_author
+  ```
+* Запустить service_author
+  ```bash
+  $ docker start service_author
+  ```
+* Смотреть логи в реальном масштабе времени
+  ```bash
+  $ docker compose logs -f 
+  ```
+* Запустить все сервисы, перенаправить логи в файл и смотреть их в реальном масштабе времени:
+  ```bash
+  $ LOG=circuit_breaker_v2.log
+  $ docker compose up -d && docker compose logs -f --since 0m > $LOG & tail -f $LOG | grep Circuit
+  ```
+* Проверка результатов выполнения домашнего задания (переменная $LOG определена в предыдущем пункте):
+  ```bash
+  $ cat $LOG | grep Circuit | grep get_author | awk awk '{print substr($6, 2, length($6)-3)}' | uniq
+  ```
+* Сценарий выполнения переходов CircuitBreaker-а (как в домашнем задании):  
+  |  Состояние  |  Действия               |
+  |:-----------:|:-----------------------:|
+  |             |Запуск всех сервисов     |
+  |**closed**   |                         |
+  |             |service_auth stop        |
+  |             |curl service_main (6 раз)|
+  |**open**     |                         |
+  |             | > 10 секунд ожидания    |
+  |**half-open**|                         |
+  |             |curl service_main (1 раз)|
+  |**open**     |                         |
+  |             | > 10 секунд ожидания    |
+  |**half-open**|                         |
+  |             |service_auth start       |
+  |             |curl service_main (1 раз)|
+  |**closed**   |                         |
